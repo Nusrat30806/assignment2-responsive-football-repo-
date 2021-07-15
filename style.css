@@ -4,13 +4,14 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
-.container{
-   
-}
+
 .section-container{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    /* display: grid;
+    grid-template-columns: repeat(2,1fr); */
     background-color: #562EFF;
+    display: flex;
+    align-items: center;
+
 
 }
 .section-title-button{
@@ -29,16 +30,8 @@ color: yellow;
     margin-top: 45px;
     margin-bottom: 151px;
 }
-.button{
-    /* text-decoration: none;
-    padding: 15px 40px;
-    /* border-radius: 50px;
-    background-image: linear-gradient(orange, #ff6347);
-    color: white; */
-    /* font-weight: 400; */
-    /* box-shadow: 10px 10px 40px orange; */
-    /* margin-bottom: 100px; */ 
-    width: 168px;
+.button{    
+width: 168px;
 height: 44px;
 padding: 10px 24px;
 background: #E02C6D;
@@ -69,10 +62,10 @@ margin-top: 45px;
     grid-template-columns: repeat(3,1fr);
     grid-column-gap:10px;
     width: 1050px;
-height: 474px;
+    height: 474px;
     margin-top: 70px;
     margin-bottom:70px ;
-margin-left: 195px;
+    margin-left: 195px;
 
 }
 .player{
@@ -86,3 +79,15 @@ margin-left: 195px;
     width: 330px;
     height: 240px;
 }
+/* section3
+ */
+ .section-3{
+    display: flex;
+    align-items: center;
+
+ }
+ .section-3 .logo-image img{
+    width: 483.87px;
+    height: 213px;
+
+ }
