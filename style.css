@@ -1,0 +1,65 @@
+/* Font description */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* common-style-font */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+   
+}
+.section-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: #562EFF;
+
+}
+.section-title-button{
+    margin-left: 156px;
+    margin-top: 207px;  
+}
+.section-title{
+font-weight: bold;
+font-size: 64px;
+width: 485px;
+height: 230px;
+color: yellow;
+/* color: #FFFFFF; */
+}
+.section-button{
+    margin-top: 45px;
+    margin-bottom: 151px;
+}
+.button{
+    /* text-decoration: none;
+    padding: 15px 40px;
+    /* border-radius: 50px;
+    background-image: linear-gradient(orange, #ff6347);
+    color: white; */
+    /* font-weight: 400; */
+    /* box-shadow: 10px 10px 40px orange; */
+    /* margin-bottom: 100px; */ 
+    width: 168px;
+height: 44px;
+padding: 10px 24px;
+background: #E02C6D;
+text-decoration: none;
+margin-top: 45px;
+ }
+ .banner{
+     margin-top: 153px;
+     margin-bottom: 86px;
+     margin-left: 140.99px;
+ }
+ .banner img{
+    width: 556.01px;
+    height: 438px;
+ }
+ .section-container:hover .section-title-button{
+    display: block;
+    transform: scale(1) skew(10deg);
+    transition: transform 2s ease-in-out;
+ }
+ .section-container:hover .banner img{
+    transform: scale(1.5) skew(-360deg);
+    transition: transform 2s ease-in-out;
+ }
