@@ -112,11 +112,10 @@ padding: 0px;
  /* css media query */
  /* for mobile version */
  @media only screen and(max-width:688px){
-    .section-container{
+    .players{
         background-color: chocolate;
-        flex-direction: column;
     }
-    .players, .footer{
+    .section-container, .footer{
         display: none;
     }
 }
