@@ -4,20 +4,27 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
-
+main{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100%; 
+}
+.container{
+    
+}
 .section-container{
     /* display: grid;
     grid-template-columns: repeat(2,1fr); */
     background-color: #562EFF;
     display: flex;
     align-items: center;
-
+height: 650px;
 
 }
-.section-title-button{
+ .section-title-button{
     margin-left: 156px;
-    margin-top: 207px;  
-}
+    margin-top: 220px;  
+} 
 .section-title{
 font-weight: bold;
 font-size: 64px;
@@ -28,7 +35,7 @@ color: yellow;
 }
 .section-button{
     margin-top: 45px;
-    margin-bottom: 151px;
+    margin-bottom: 169px;
 }
 .button{    
 width: 168px;
@@ -47,24 +54,25 @@ margin-top: 45px;
     width: 556.01px;
     height: 438px;
  }
- .section-container:hover .section-title-button{
-    display: block;
-    transform: scale(1) skew(10deg);
-    transition: transform 2s ease-in-out;
- }
- .section-container:hover .banner img{
+ .section-container  .banner:hover{
     transform: scale(1.5) skew(-360deg);
     transition: transform 2s ease-in-out;
  }
+ 
+.section-container .section-title-button:hover{
+    transform: scale(1.5) skew(-360deg);
+    transition: transform 2s ease-in-out; 
+}
+ 
+
  /* Player blogs */
- .players{
+ .container .players{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-column-gap:10px;
     width: 1050px;
-    height: 474px;
-    margin-top: 70px;
-    margin-bottom:70px ;
+    height: 1000px;
+    margin-top:0px;
     margin-left: 195px;
 
 }
@@ -79,15 +87,36 @@ margin-top: 45px;
     width: 330px;
     height: 240px;
 }
-/* section3
+/* Horizontal line */
+hr{
+    border: 2px solid #562EFF;
+    width: 600px;
+}
+/* footer
  */
- .section-3{
-    display: flex;
-    align-items: center;
-
+ 
+ .footer{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
  }
- .section-3 .logo-image img{
-    width: 483.87px;
-    height: 213px;
-
+ 
+ .footer img{
+     width: 400px;
+     height: 120px;
+     margin-right: 110px;
  }
+
+ /* css media query */
+ /* for mobile version */
+ @media only screen and(max-width:688px){
+    .section-container{
+        background-color: chocolate;
+        flex-direction: column;
+    }
+    .players, .footer{
+        display: none;
+    }
+}
